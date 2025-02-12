@@ -1,6 +1,6 @@
 import type { IIncome } from '../models/income.js';
 
-export interface IncomeRepository {
+export interface IIncomeRepository {
   create(income: IIncome): Promise<IIncome>;
   update(id: string, income: IIncome): Promise<IIncome>;
   findAll(): Promise<IIncome[]>;
